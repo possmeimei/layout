@@ -1,0 +1,43 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+.demo{
+    display: inline-grid;
+    grid-template-columns: 240px 240px;
+    grid-template-rows: 240px repeat(4,120px);
+    grid-template-areas:
+     "bigImage middleImage1"
+     "bigImage middleImage2"
+     "smallImage1 middleImage2"
+     "smallImage2 middleImage3"
+     "smallImage3 middleImage3";
+    border: 1px solid red;
+}
+.bigImage{
+    grid-area: bigImage;
+    border: 1px solid red;
+}
+.middleImage1{
+    grid-area: middleImage1;
+    border: 1px solid red;
+}
+.middleImage2{
+    grid-area: middleImage2;
+    border: 1px solid red;
+}
+.middleImage3{
+    grid-area: middleImage3;
+    border: 1px solid red;
+}
+.smallImage1{
+    grid-area: smallImage1;
+    border: 1px solid red;
+}
+.smallImage2{
+    grid-area: smallImage2;
+    border: 1px solid red;
+}
+.smallImage3{
+    grid-area: smallImage3;
+    border: 1px solid red;
+}
